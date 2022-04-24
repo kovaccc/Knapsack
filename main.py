@@ -26,6 +26,10 @@ with open('Assignment 1 knapsack.txt') as knapsackFile:
 
     start = timeit.default_timer()
     bfs.breadth_first_search(max_weight=maxWeight, searched_items=items)
+    stop = timeit.default_timer()
+    print('BFS time: ', stop - start)
+    start = timeit.default_timer()
     dfs.depth_first_search(max_weight=maxWeight, searched_items=items)
     stop = timeit.default_timer()
-    print('Time: ', stop - start)
+    print('DFS time: ', stop - start)
+
